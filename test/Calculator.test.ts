@@ -1,4 +1,5 @@
 import { Calculator } from '../src/Calculator'
+import { expect, test } from 'vitest'
 
 test('adds 1 + 2 to equal 3', () => {
     let calculator = new Calculator();
@@ -11,4 +12,3 @@ test('adds 0 + 4 to equal 4', () => {
 
     expect(calculator.sum(0, 4)).toBe(4);
 });
-
