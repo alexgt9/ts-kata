@@ -4,6 +4,7 @@
   },
   "scripts": {
     "test": "vitest",
+    "tcr": "vitest run && git add . && git commit || git checkout . && git clean -df && echo \"Ohhh, failed, reseting\"",
     "coverage": "vitest run --coverage"
   }
 }
